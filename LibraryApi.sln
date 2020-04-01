@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApi", "LibraryApi\LibraryApi.csproj", "{B7DE0D27-79BB-4D29-9FC8-7F511C42A476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApiIntegrationTests", "LibraryApiIntegrationTests\LibraryApiIntegrationTests.csproj", "{90A5ECE0-867E-45E4-96C7-A9000ECD465F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApiIntegrationTests", "LibraryApiIntegrationTests\LibraryApiIntegrationTests.csproj", "{90A5ECE0-867E-45E4-96C7-A9000ECD465F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiClient", "ConsoleAppApiC1ApiClient\ApiClient.csproj", "{7A794D63-1DF6-4036-BD04-825CA0659A31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{90A5ECE0-867E-45E4-96C7-A9000ECD465F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A5ECE0-867E-45E4-96C7-A9000ECD465F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A5ECE0-867E-45E4-96C7-A9000ECD465F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A794D63-1DF6-4036-BD04-825CA0659A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A794D63-1DF6-4036-BD04-825CA0659A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A794D63-1DF6-4036-BD04-825CA0659A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A794D63-1DF6-4036-BD04-825CA0659A31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

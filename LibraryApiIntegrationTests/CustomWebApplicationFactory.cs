@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using LibraryApi.Services;
+using LibraryApi.Controllers;
 
 namespace LibraryApiIntegrationTests
 {
@@ -31,6 +32,14 @@ namespace LibraryApiIntegrationTests
                 }
                 services.AddTransient<IGenerateEmployeeIds, TestingEmployeeIdGenerator>();
 
+                var lookupOnCallDeveloperDescriptor = services.SingleOrDefault(
+d => d.ServiceType == typeof(ILookupOnCallDevelopers));
+                if (lookupOnCallDeveloperDescriptor != null)
+                {
+                    services.Remove(lookupOnCallDeveloperDescriptor);
+                }
+
+                services.AddTransient<ILookupOnCallDevelopers, FakeTeamsDeveloperLookup>();
 
                 var descriptor = services.SingleOrDefault(
                     d => d.ServiceType ==
